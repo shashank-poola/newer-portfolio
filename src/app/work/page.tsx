@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://www.nexxel.dev/og/home?title=work",
+        url: "https://www.shashank.ink/og/home?title=work",
       },
     ],
   },

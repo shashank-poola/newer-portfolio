@@ -5,11 +5,11 @@ export function Header() {
     <header className="mb-16 space-y-4">
       <h1 className="text-5xl font-semibold tracking-tight text-white text-balance mb-4 animate-fade-in">
         <span className="inline-block">
-          <ScrambleText text="shoubhit dash" />
+          <ScrambleText text="Shashank Poola" />
         </span>
       </h1>
       <p className="text-gray-500 animate-fade-in">
-        software engineer at opencode · chennai, india
+        Full Stack AI Developer · Hyderabad, india
       </p>
       <p className="text-pretty max-w-[52ch] animate-fade-in-up">
         i&apos;m a 20 y/o cs undergrad student. i love building things and

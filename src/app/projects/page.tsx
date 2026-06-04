@@ -4,89 +4,74 @@ import { Metadata } from "next"
 
 const projects = [
   {
-    title: "create-t3-app",
+    title: "revue",
     description:
-      "cli tool to bootstrap full-stack type-safe next.js applications",
+      "AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat with cli",
     role: "creator and maintainer",
-    period: "jun 2022 - present",
+    period: "apr 2026 - may 2026",
     achievements: [
-      "grew project to 24k+ github stars",
-      "wrote education blog posts with over 100k views",
-      "maintained comprehensive, up-to-date documentation",
+      "built and shipped a fully functional GitHub App from scratch",
+      "automated end-to-end PR review pipeline with inline comment posting",
+      "merged open source contributions to Nao Labs and OpenClaw",
     ],
-    technologies: [
-      "typescript",
-      "next.js",
-      "trpc",
-      "prisma",
-      "tailwind css",
-      "auth.js",
-    ],
-    href: "https://create.t3.gg",
+    technologies: ["typescript", "next.js", "github", "prisma", "claude api"],
+    href: "https://github.com/shashank-poola/pullrabbit",
   },
   {
-    title: "mini-git",
-    description: "a simplified implementation of git built from scratch",
-    role: "creator",
-    period: "jul 2024",
-    achievements: [
-      "successfully implemented core git commands",
-      "implemented efficient blob storage and compression",
-      "learned about git's internal object model and data structures like merkle trees",
-    ],
-    technologies: ["go", "sha-1"],
-    href: "https://github.com/nexxeln/mini-git",
-  },
-  {
-    title: "license-generator",
-    description: "cli tool to create licenses for your projects",
-    role: "creator and maintainer",
-    period: "mar 2022 - present",
-    achievements: [
-      "grew project to over 3.2k downloads",
-      "built a robust cli interface with fuzzy search",
-      "added support for all github licenses with auto-filling",
-    ],
-    technologies: ["rust", "github api"],
-    href: "https://github.com/nexxeln/license-generator",
-  },
-  {
-    title: "spotify-voice-control",
-    description: "voice control for spotify through the terminal",
-    role: "creator",
-    period: "feb 2022",
-    achievements: [
-      "integrated spotify web api for seamless, real-time music control",
-      "built voice command system for comprehensive music control including playback, search, and playlist management",
-    ],
-    technologies: ["python", "spotify api"],
-    href: "https://github.com/nexxeln/spotify-voice-control",
-  },
-  {
-    title: "text2regex",
+    title: "datamind",
     description:
-      "convert natural language text into validated regular expressions",
+      "Enterprise RAG pipeline with hybrid retrieval, semantic reranking, and sub-200ms query response.",
     role: "creator",
-    period: "jul 2024",
+    period: "apr 2026",
     achievements: [
-      "implemented a self-correcting llm-powered regex generator",
-      "built a easy-to-use cli to generate regex patterns",
+      "built hybrid BM25 + vector retrieval pipeline from scratch",
+      "integrated semantic reranking to improve answer relevance",
+      "achieved sub-200ms query response under concurrent load",
     ],
-    technologies: ["typescript", "openai"],
-    href: "https://github.com/nexxeln/text2regex",
+    technologies: ["typescript", "fastapi", "qdrant", "cohere", "redis"],
+    href: "https://github.com/shashank-poola/enterprises-data-RAG",
   },
   {
-    title: "fp_",
-    description: "a functional programming library for typescript",
+    title: "rivet",
+    description:
+      "Visual workflow automation builder with a node-based canvas for composing multi-step AI and API pipelines.",
     role: "creator",
-    period: "feb 2023",
+    period: "oct 2025 - nov 2025",
     achievements: [
-      "implemented a comprehensive set of functional programming constructs",
-      "wrote documentation and examples to help developers understand and use the library",
-      "published to deno package registry",
+      "built drag-and-drop node canvas for composing workflows visually",
+      "supported multi-step AI and API pipeline execution",
+      "designed extensible node system for custom integrations",
     ],
-    technologies: ["typescript"],
-    href: "https://github.com/nexxeln/fp",
+    technologies: ["typescript", "react", "next.js", "langchain"],
+    href: "https://github.com/shashank-poola/rivet",
+  },
+  {
+    title: "tradex",
+    description:
+      "Real-time crypto trading platform with leveraged trades, slippage control, and live PnL tracking.",
+    role: "creator",
+    period: "aug 2025 - sep 2025",
+    achievements: [
+      "built real-time order execution with sub-100ms latency",
+      "implemented leveraged trading with slippage control",
+      "processed 5k+ events per second via Redis Streams",
+    ],
+    technologies: ["typescript", "redis", "postgresql", "websockets"],
+    href: "https://tradex.foo",
+  },
+  {
+    title: "agentos",
+    description:
+      "Multi-agent AI platform for orchestrating LLM workflows with tool calling, RAG pipelines, and real-time agent execution.",
+    role: "creator",
+    period: "feb 2026",
+    achievements: [
+      "orchestrated multi-agent workflows using LangGraph",
+      "integrated RAG pipelines with Qdrant for long-term agent memory",
+      "built tool-calling layer supporting custom agent integrations",
+    ],
+    technologies: ["typescript", "langgraph", "qdrant", "next.js"],
+    href: "https://tryagentos.vercel.app",
   },
 ]
 
@@ -119,7 +104,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://www.nexxel.dev/og/home?title=projects",
+        url: "https://www.shashank.ink/og/home?title=projects",
       },
     ],
   },

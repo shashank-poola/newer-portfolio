@@ -78,7 +78,7 @@ export default async function Post({ params }: PageProps) {
             url: `https://nexxel.dev/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "Shoubhit Dash",
+              name: "Shashank Poola",
             },
           }),
         }}

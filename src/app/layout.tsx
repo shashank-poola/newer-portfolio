@@ -10,20 +10,20 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.nexxel.dev"),
+  metadataBase: new URL("https://www.shashank.ink"),
   title: {
-    default: "Shoubhit Dash",
-    template: "%s | Shoubhit Dash",
+    default: "Shashank Poola",
+    template: "%s | Shashank Poola",
   },
   description: "Developer, cardist and maker of things.",
   openGraph: {
-    title: "Shoubhit Dash",
+    title: "Shashank Poola",
     description: "Developer, cardist and maker of things.",
-    url: "https://www.nexxel.dev",
-    siteName: "Shoubhit Dash",
+    url: "https://www.shashank.ink",
+    siteName: "Shashank Poola",
     locale: "en_US",
     type: "website",
-    images: ["https://www.nexxel.dev/og/home"],
+    images: ["https://www.shashank.ink/og/home"],
   },
   robots: {
     index: true,
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "max-snippet": -1,
   },
   twitter: {
-    title: "Shoubhit Dash",
+    title: "Shashank Poola",
     card: "summary_large_image",
-    creator: "@nexxeln",
+    creator: "@shashankpoola",
   },
 }
 

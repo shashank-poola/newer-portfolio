@@ -8,17 +8,17 @@ const featuredWorkItems: Item[] = workItems.slice(0, 3)
 
 const projectItems = [
   {
-    title: "create-t3-app",
-    role: "creator and maintainer",
+    title: "revue",
+    role: "creator",
     description:
-      "open-source project for initializing full-stack next.js apps. 24k+ stars, 200+ contributors",
-    href: "https://create.t3.gg",
+      "AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat with cli",
+    href: "https://github.com/shashank-poola/pullrabbit",
   },
   {
-    title: "mini-git",
+    title: "datamind",
     role: "creator",
-    description: "simplified version of git from scratch",
-    href: "https://github.com/nexxeln/mini-git",
+    description: "Enterprise RAG pipeline with hybrid retrieval, semantic reranking, and sub-200ms query response.",
+    href: "https://github.com/shashank-poola/enterprises-data-RAG",
   },
 ]
 
