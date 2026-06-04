@@ -1,6 +1,8 @@
 import { ScrambleText } from "@/components/scramble-text"
 import { ProjectCard } from "@/components/project-card"
 import { Metadata } from "next"
+import Link from "next/link"
+import { GitPullRequest } from "lucide-react"
 
 const projects = [
   {
@@ -75,6 +77,31 @@ const projects = [
   },
 ]
 
+const openSource = [
+  {
+    repo: "openclaw",
+    prs: [
+      {
+        title: "fix(cli): auto-reconnect logs --follow on transient gateway disconnect",
+        href: "https://github.com/openclaw/openclaw/pull/75059",
+      },
+    ],
+  },
+  {
+    repo: "nao-labs",
+    prs: [
+      {
+        title: "fix(sync): strip .git/ from cloned repos to fix gitlink bug",
+        href: "https://github.com/getnao/nao/pull/720",
+      },
+      {
+        title: "fix: format large numbers with K/M/B suffix in KPI cards and tooltips",
+        href: "https://github.com/getnao/nao/pull/766",
+      },
+    ],
+  },
+]
+
 export default function ProjectsPage() {
   return (
     <main className="animate-fade-in-up">
@@ -93,6 +120,37 @@ export default function ProjectsPage() {
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-2xl font-bold mb-6 text-white">
+          <span className="text-accent accent-glow mr-2">*</span>
+          Open Source
+        </h2>
+
+        <div className="space-y-6">
+          {openSource.map((entry) => (
+            <div key={entry.repo}>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-white font-semibold">{entry.repo}</span>
+                <span className="text-xs text-gray-600">{entry.prs.length} PR</span>
+              </div>
+              <div className="space-y-1.5 ml-1">
+                {entry.prs.map((pr) => (
+                  <Link
+                    key={pr.title}
+                    href={pr.href}
+                    target="_blank"
+                    className="flex items-start gap-2 text-sm text-gray-400 hover:text-accent transition-colors group"
+                  >
+                    <GitPullRequest className="w-3.5 h-3.5 mt-0.5 shrink-0 text-gray-600 group-hover:text-accent transition-colors" />
+                    <span>{pr.title}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   )

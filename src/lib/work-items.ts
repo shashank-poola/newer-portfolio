@@ -16,7 +16,7 @@ export const workItems: Item[] = [
     href: "https://x.ai",
   },
   {
-    title: "residental hacker house - Super30",
+    title: "residental hacker house",
     role: "full stack developer",
     period: "aug 2025 - mar 2025",
     description: "Super30 · India's top hacker house. Ship with the best.",

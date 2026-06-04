@@ -3,6 +3,7 @@ import { Item, SectionList } from "@/components/section-list"
 import { BlogSection } from "@/components/blog-section"
 import { LinksSection } from "@/components/links-section"
 import { workItems } from "@/lib/work-items"
+import { OpenSourceSection } from "@/components/open-source-section"
 
 const featuredWorkItems: Item[] = workItems.slice(0, 3)
 
@@ -39,6 +40,7 @@ export default function HomePage() {
         viewAllHref="/projects"
         viewAllText="all projects"
       />
+      <OpenSourceSection />
       <LinksSection />
     </>
   )

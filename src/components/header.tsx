@@ -11,11 +11,11 @@ export function Header() {
       <p className="text-gray-500 animate-fade-in">
         Full Stack AI Developer · Hyderabad, india
       </p>
-      <p className="text-pretty max-w-[52ch] animate-fade-in-up">
-        i&apos;m a 20 y/o cs undergrad student. i love building things and
-        solving problems. i enjoy language design, theoretical computer science
-        and i live on the terminal. if i&apos;m not coding, i&apos;m probably
-        doing cardistry, watching movies or obsessing over mechanical keyboards.
+      <p className="animate-fade-in-up">
+        engineer, polymath, shipping from 0→1,<br />
+        going deep in AI agents, RAG pipelines & autonomous systems<br />
+        full-stack in Next.js, Node.js, TypeScript<br />
+        I love watching movies or obsessing reading papers.
       </p>
     </header>
   )
