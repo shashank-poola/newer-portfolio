@@ -9,7 +9,7 @@ const featuredWorkItems: Item[] = workItems.slice(0, 3)
 
 const projectItems = [
   {
-    title: "revue",
+    title: "pullrabbit",
     role: "creator",
     description:
       "AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat with cli",
@@ -19,7 +19,7 @@ const projectItems = [
     title: "datamind",
     role: "creator",
     description: "Enterprise RAG pipeline with hybrid retrieval, semantic reranking, and sub-200ms query response.",
-    href: "https://github.com/shashank-poola/enterprises-data-RAG",
+    href: "https://datamind.shashank.ink",
   },
 ]
 
