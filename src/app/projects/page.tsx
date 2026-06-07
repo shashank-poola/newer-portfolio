@@ -6,7 +6,7 @@ import { GitPullRequest } from "lucide-react"
 
 const projects = [
   {
-    title: "revue",
+    title: "pullrabbit",
     description:
       "AI-first pull request reviewer with context-aware feedback, line-by-line code suggestions, and real-time chat with cli",
     role: "creator and maintainer",
@@ -16,7 +16,7 @@ const projects = [
       "automated end-to-end PR review pipeline with inline comment posting",
       "merged open source contributions to Nao Labs and OpenClaw",
     ],
-    technologies: ["typescript", "next.js", "github", "prisma", "claude api"],
+    technologies: ["typescript", "next.js", "github api", "qdrant", "openrouter"],
     href: "https://github.com/shashank-poola/pullrabbit",
   },
   {
@@ -30,8 +30,8 @@ const projects = [
       "integrated semantic reranking to improve answer relevance",
       "achieved sub-200ms query response under concurrent load",
     ],
-    technologies: ["typescript", "fastapi", "qdrant", "cohere", "redis"],
-    href: "https://github.com/shashank-poola/enterprises-data-RAG",
+    technologies: ["fastapi", "nextjs", "qdrant", "cohere", "redis"],
+    href: "https://datamind.shashank.ink",
   },
   {
     title: "rivet",
